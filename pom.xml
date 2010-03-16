@@ -15,9 +15,9 @@
 
 
   <scm>
-     <connection>scm:svn:https://code.zauber.com.ar/repos/sandbox/components/checkstyle/code/trunk/</connection>
-     <developerConnection>scm:svn:https://code.zauber.com.ar/repos/sandbox/components/checkstyle/code/trunk/</developerConnection>
-     <url>https://code.zauber.com.ar/repos/sandbox/components/checkstyle/code/trunk/</url>
+     <connection>scm:svn:https://code.zaubersoftware.com/repos/sandbox/components/checkstyle/code/trunk/</connection>
+     <developerConnection>scm:svn:https://code.zaubersoftware.com/repos/sandbox/components/checkstyle/code/trunk/</developerConnection>
+     <url>https://code.zaubersoftware.com/repos/sandbox/components/checkstyle/code/trunk/</url>
   </scm>
 
   <licenses>
@@ -34,14 +34,14 @@
       <snapshots><enabled>false</enabled></snapshots>
       <id>zauber-code-releases</id>
       <name>Zauber Code Releases</name>
-      <url>https://repo1.zauber.com.ar/zauber/code/releases</url>
+      <url>https://repo1.zaubersoftware.com/zauber/code/releases</url>
     </repository>
     <repository>
       <releases><enabled>false</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
       <id>zauber-code-snapshots</id>
       <name>Zauber Code Snapshots</name>
-      <url>https://repo1.zauber.com.ar/zauber/code/snapshots</url>
+      <url>https://repo1.zaubersoftware.com/zauber/code/snapshots</url>
     </repository>
   </repositories>
 </project>
