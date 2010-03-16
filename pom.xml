@@ -10,7 +10,7 @@
   <groupId>ar.com.zauber.maven.poms</groupId>
   <artifactId>zauber-checkstyle</artifactId>
   <packaging>jar</packaging>
-  <version>4-SNAPSHOT</version>
+  <version>5-SNAPSHOT</version>
   <name>Zauber Checkstyle</name>
 
 
