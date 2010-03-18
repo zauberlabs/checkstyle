@@ -97,7 +97,9 @@
         <module name="PackageAnnotation"/>
         <module name="AvoidStarImport"/>
         <module name="IllegalThrows"/>
-        <module name="IllegalCatch"/>
+        <module name="IllegalCatch">
+           <property name="illegalClassNames" value="java.lang.Exception, java.lang.RuntimeException"/>
+        </module>
         <module name="CovariantEquals"/>
         <module name="DefaultComesLast"/>
         <module name="ReturnCount">
