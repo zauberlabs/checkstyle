@@ -15,10 +15,11 @@
 
 
   <scm>
-     <connection>scm:svn:https://code.zaubersoftware.com/repos/sandbox/components/checkstyle/code/trunk/</connection>
-     <developerConnection>scm:svn:https://code.zaubersoftware.com/repos/sandbox/components/checkstyle/code/trunk/</developerConnection>
-     <url>https://code.zaubersoftware.com/repos/sandbox/components/checkstyle/code/trunk/</url>
+    <connection>scm:git:git@github.com:zaubersoftware/checkstyle.git</connection>
+    <url>scm:git:git@github.com:zaubersoftware/checkstyle.git</url>
+    <developerConnection>scm:git:git@github.com:zaubersoftware/checkstyle.git</developerConnection>
   </scm>
+
 
   <licenses>
      <license>
@@ -44,4 +45,20 @@
       <url>https://repo1.zaubersoftware.com/zauber/code/snapshots</url>
     </repository>
   </repositories>
+  <build>
+      <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+                <autoVersionSubmodules>true</autoVersionSubmodules>
+                <pushChanges>false</pushChanges>
+        </configuration>
+
+        <version>2.1</version>
+      </plugin>
+
+      </plugins>
+  </build>
+
 </project>
