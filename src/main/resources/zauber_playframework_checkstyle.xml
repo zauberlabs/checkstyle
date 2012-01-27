@@ -64,6 +64,7 @@
     <module name="JavadocType"/>
     <module name="JavadocVariable">
       <property name="scope" value="package"/>
+      <property name="excludeScope" value="public" />
     </module>
     <module name="ConstantName"/>
     <module name="LocalFinalVariableName"/>
