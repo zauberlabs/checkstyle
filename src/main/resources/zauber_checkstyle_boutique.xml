@@ -5,7 +5,7 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: Zauber
+    Checkstyle-Configuration: zauber-boutique
     Description: none
 -->
 <module name="Checker">
@@ -29,7 +29,7 @@
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
     <module name="HiddenField">
-      <property name="tokens" value="PARAMETER_DEF, VARIABLE_DEF"/>
+      <property name="tokens" value="VARIABLE_DEF"/>
       <property name="ignoreConstructorParameter" value="true"/>
       <property name="ignoreSetter" value="true"/>
     </module>
@@ -56,6 +56,7 @@
       <property name="allowMissingParamTags" value="true"/>
       <property name="allowMissingThrowsTags" value="true"/>
       <property name="allowMissingReturnTag" value="true"/>
+      <property name="allowMissingJavadoc" value="true"/>
       <property name="allowMissingPropertyJavadoc" value="true"/>
     </module>
     <module name="JavadocType"/>
@@ -66,7 +67,9 @@
     <module name="LocalFinalVariableName"/>
     <module name="LocalVariableName"/>
     <module name="MemberName"/>
-    <module name="MethodName"/>
+    <module name="MethodName">
+      <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>
+    </module>
     <module name="PackageName"/>
     <module name="ParameterName"/>
     <module name="StaticVariableName"/>
@@ -121,11 +124,6 @@
     </module>
     <module name="BooleanExpressionComplexity">
       <property name="max" value="4"/>
-    </module>
-    <module name="JavadocMethod">
-      <property name="scope" value="protected"/>
-      <property name="excludeScope" value="anoninner"/>
-      <property name="suppressLoadErrors" value="true"/>
     </module>
     <module name="AnonInnerLength">
       <property name="max" value="80"/>
